@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*font-family: 'Comfortaa', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Inconsolata', monospace;
+*/
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --nav-drop-down--: rgba(12, 19, 21, 255);
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero-main {
+    height: 200vh;
+    width: 100%;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.hero-bg-img-mian {
+    height: 100%;
+    width: 100%;
+    animation: hero-animation 14s infinite;
+}
+
+@keyframes hero-animation {
+
+    0% {
+        background: url(Images/hero-img-1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    25% {
+        background: url(Images/hero-img-2.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    50% {
+        background: url(Images/heor-img-3.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    75% {
+        background: url(Images/hero-img-4.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    100% {
+        background: url(Images/hero-img-1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.header-1-main {
+    border-bottom: 1px solid #eee;
+}
+
+.header-1-main h6,
+i {
+    font-family: 'Inconsolata', monospace;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.nav-item .nav-link {
+    color: #eee;
+    font-family: 'Inconsolata', monospace;
+    font-size: 17px;
+}
+
+.nav-sub-menu {
+    height: auto;
+    width: 300px;
+    position: absolute;
+    background: var(--nav-drop-down--);
+    border-radius: 15px;
+    display: none;
+}
+
+.nav-hover:hover .nav-sub-menu{
+    display: block;
+}
+
+.sub-menu-content {
+    height: auto;
+    width: 300px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sub-menu-content ul li {
+    line-height: 2.6;
+    list-style: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    color: #aaa9a9;
+}
+
+.sub-menu-content ul li:hover {
+    color: #eee;
+}
+
