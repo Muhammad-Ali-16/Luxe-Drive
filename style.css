@@ -10,14 +10,22 @@ font-family: 'Inconsolata', monospace;
 
 p {
     font-family: 'Open Sans', sans-serif;
+    color: #eee;
+    line-height: 1.6;
 }
 
 :root {
     --nav-drop-down--: rgba(12, 19, 21, 255);
+    --background-color-1: rgba(20, 26, 28, 255);
 }
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
 }
 
 /*--=================Hero-Section=================-*/
@@ -74,8 +82,6 @@ a {
 }
 
 /*-----------------Header-Before-Collapse----------------*/
-
-
 
 .header-1-main {
     border-bottom: 1px solid #eee;
@@ -147,6 +153,10 @@ i {
 
 /*-----------------Header-On-Scroll----------------*/
 
+.header-scroll-main {
+    border-bottom: 1px solid #b6b1b1;
+}
+
 .header-scroll-main .nav-item .nav-link:hover {
     text-decoration: underline;
 }
@@ -162,10 +172,6 @@ i {
 
 /*-----------------Header-After-Collapse----------------*/
 
-.header-after-collapse .navbar {
-    background: linear-gradient(var(--nav-drop-down--), var(--nav-drop-down--));
-}
-
 .header-after-collapse {
     position: sticky;
     top: -3px;
@@ -173,10 +179,11 @@ i {
 }
 
 .header-after-collapse .navbar {
-    position: absolute;
-    z-index: 999;
-    top: 0;
     width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(var(--nav-drop-down--), var(--nav-drop-down--));
 }
 
 .header-after-collapse .navbar .collapse {
@@ -222,6 +229,8 @@ ul li {
     color: #eee;
 }
 
+/*-----------------Home-Section-----------------*/
+
 .home-main {
     height: auto;
     width: 91%;
@@ -232,7 +241,6 @@ ul li {
 
 .home-main h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 43px;
 }
 
 .home-main h5 {
@@ -248,35 +256,131 @@ ul li {
     outline: none;
     border-bottom: 1px solid #b6b1b1;
     padding: 5px 35px 0 5px;
+    color: #b6b1b1;
+    font-size: 15px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.transparent:focus {
     color: #eee;
     font-size: 15px;
     font-family: 'Inconsolata', monospace;
-
 }
 
-.transparent:focus{
+.transparent::placeholder {
+    color: #b6b1b1;
+}
+
+.transparent option {
+    color: #666;
+}
+
+.home-btn {
+    background: transparent;
+    outline: none;
     color: #eee;
-    font-size: 15pxpx;
+    border: 1px solid #eee;
+}
+
+/*--=================What-We-Provide-Section=================-*/
+
+.section-2-main {
+    height: auto;
+    width: 100%;
+    position: relative;
+    background: var(--background-color-1);
+}
+
+.sec-2-content-main {
+    height: auto;
+    width: 91%;
+    padding-bottom: 35px;
+}
+
+.sec-2-main-para p {
+    color: #888;
+    font-weight: 600;
+}
+
+.sce-2-para-call .bi-headset {
+    font-size: 35px;
+}
+
+.sce-2-para-call {
+    color: #BFA37C;
+}
+
+.card-img-main {
+    height: auto;
+    position: relative;
+}
+
+.sec-2-img-content-main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000c5;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.card-img-main:hover .sec-2-img-content-main {
+    opacity: 1;
+}
+
+.img-content {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 30%;
+    left: 47%;
+    transform: translate(-50%, 50%);
+    color: #eee;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.img-content sup {
+    font-size: 22px;
+    color: #bfa37c;
+    font-weight: bold;
+}
+
+.img-content h5 {
+    color: #888;
+}
+
+.img-content sub {
+    color: #bfa37c;
+}
+
+.img-content span {
+    font-size: 38px;
+    font-weight: 400;
+    color: #bfa37c;
+}
+
+.img-content-para {
+    font-size: 15px;
+    color: #888;
+}
+
+.card-lower-content{
+    height: 100px;
+    width: 100%;
     font-family: 'Inconsolata', monospace;
 }
 
-.transparent::placeholder{
-    color:#b6b1b1 ;
+.card-lower-content > a{
+    color: #eee;
 }
 
-.home-btn{
-    margin-bottom: 100px;
+.card-stars-main{
+    color: #BFA37C;
+    font-size: large;
 }
 
-
-
-
-.abc {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background-color: #999;
-}
 
 
 @media(min-width:998px) {
@@ -292,4 +396,104 @@ ul li {
         transition: top 0.6s;
         z-index: 997;
     }
+
+    h1 {
+        font-size: 43px;
+        color: #eee;
+    }
+
+    .sec-2-content-main>p {
+        font-size: 16px;
+    }
+
+    .sec-2-main-para {
+        width: 88%;
+        float: right;
+    }
+
+}
+
+@media (max-width:965px) {
+
+    .img-content {
+        position: absolute;
+        top: 24%;
+        left: 45%;
+        transform: translate(-50%, 50%);
+    }
+
+}
+
+@media (max-width:885px) {
+
+    .img-content {
+        position: absolute;
+        top: 18%;
+        left: 45%;
+        transform: translate(-50%, 50%);
+    }
+
+}
+
+@media (max-width:750px) {
+
+    .img-content {
+        position: absolute;
+        top: 13%;
+        left: 43%;
+        transform: translate(-50%, 50%);
+    }
+
+}
+
+@media (max-width:690px) {
+
+    .img-content {
+        position: absolute;
+        top: 8%;
+        left: 43%;
+        transform: translate(-50%, 50%);
+    }
+
+    .img-content span {
+        font-size: 28px;
+    }
+
+    .img-content sup {
+        font-size: 17px;
+    }
+
+}
+
+@media (width:622px) {
+
+    .img-content {
+        position: absolute;
+        top: 5%;
+        left: 43%;
+        transform: translate(-50%, 50%);
+    }
+
+    .img-content h5 {
+        font-size: 10px;
+    }
+
+    .img-content h5 {
+        font-size: 15px;
+    }
+
+    .img-content span {
+        font-size: 27px;
+    }
+
+    .img-content sup {
+        font-size: 15px;
+    }
+
+    .img-content-para {
+        font-size: 13px;
+    }
+
+
+
 }
