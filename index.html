@@ -11,6 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!--=================JQuery-Links=================-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <!--=================BootStrap-Icons-Links=================-->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css"
@@ -21,15 +24,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Inconsolata&family=Open+Sans&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <!--=================Animate-On-Scroll(AOS)-Links=================-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/aos.css">
+    <script src="path/to/aos.js"></script>
     <!--=================CSS-Links=================-->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -587,57 +586,268 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-8">
-                            <h1>Need to Rent a Luxury Car?<br />Send A Request</h1>
-                            <h5>Complete the form below and we'll contact you as soon as possible</h5>
+                            <h1 class="mt-lg-0 mt-5 pt-md-0 pt-4">Need to Rent a Luxury Car?<br />Send A Request</h1>
+                            <h5 class="d-md-block d-none">Complete the form below and we'll contact you as soon as
+                                possible</h5>
                         </div>
                         <div class="col-lg-4"></div>
                     </div>
-                    <div class="row mt-5 pt-2">
-                        
-                            <div class="col-lg-2">
-                                <input class="form-input transparent" type="text" aria-required="true" aria-invalid="true"
-                                    placeholder="Choose Location" required />
+                    <div class="row mt-lg-5 pt-lg-2 pt-3">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <input type="text" class="transparent  mb-2 mb-lg-0" id="validationCustom03"
+                                    placeholder="Chosse Location" required>
+                                <div class="invalid-feedback"> Provide valid location. </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <input type="date" class="transparent  mb-2 mb-lg-0" id="validationCustomDate" required>
+                                <div class="invalid-feedback"> Please select date. </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <input type="time" class="transparent  mb-2 mb-lg-0" id="validationCustomTime" required>
+                                <div class="invalid-feedback"> Please select time. </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <input type="text" class="transparent  mb-2 mb-lg-0" id="validationCustom03"
+                                    placeholder="Drop Off Location" required>
+                                <div class="invalid-feedback"> Provide valid location. </div>
                             </div>
                             <div class="col-lg-2">
-                                <input class="form-input transparent" type="date" aria-required="true" aria-invalid="true"
-                                    placeholder="Choose Location" required />
+                                <button class="home-btn px-5 py-3 rounded-3" type="submit">Send</button>
                             </div>
-                            <div class="col-lg-2">
-                                <input class="form-input transparent" type="time" aria-required="true" aria-invalid="true"
-                                    placeholder="Choose Location" required />
-                            </div>
-                            <div class="col-lg-2">
-                                <input class="form-input transparent" type="text" aria-required="true" aria-invalid="true"
-                                    placeholder="Drop Off Location" required />
-                            </div>
-                            <div class="col-lg-2">
-                                <button type="submit" class="home-btn px-5 py-3">Send</button>
-                            </div>
-                        
+                        </form>
+
                     </div>
                 </div>
             </section>
 
-
-
         </div>
     </section>
 
-    <div class="abc"></div>
+    <!--=================What-We-Provide-Section/Section-2-Main=================-->
+    <section class="section-2-main">
+        <div class="sec-2-content-main mx-auto">
+            <div class="contianer-fluid">
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                var navbar = $("#header-scroll-main");
-                if ($(document).scrollTop() > 600) {
-                    navbar.css("top", "0px");
-                } else {
-                    navbar.css("top", "-80px");
-                }
-            });
-        });
-    </script>
+                <div class="sec-2-main-heading pt-5 pb-5">
+                    <div class="row pt-4">
+                        <div class="col-lg-6 text-white">
+                            <h1>What We Provide Is The Luxury Transport And Most Comfortable Experience</h1>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="sec-2-main-para">
+                                <p>Vivamus arcu felis bibendum ut tristique et egestas. Ultricies leo intege in
+                                    malesuada nunc vel risus commodo. Sapien nec sagittis aliquam male bibendum arcu
+                                    vitae. Inornare quam viverra orci sagittis eu volutpat odio facilisis. Fringilla est
+                                    ullamcorper eget nulla facilisi nul.</p>
+                                <div class="sce-2-para-call mt-4">
+                                    <h5><i class="bi bi-headset"></i> CALL CENTER: +1234 5678 901</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 pt-2">
+
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="sec-2-card-main cards-common">
+
+                            <div class="card-img-main">
+                                <img src="Images/Section-2-Card-img-01.jpg" width="95%" class="card-img" />
+                                <div class="sec-2-img-content-main">
+                                    <div class="img-content">
+                                        <h3>4x4</h3>
+                                        <h5> from <sup>$</sup> <span>180</span> <sub>/hour</sub> </h5>
+                                        <p class="img-content-para">Lorem ipsum dolor sit do amet, consectetur,
+                                            adipiscing elit, sed </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card-lower-content text-center mt-4">
+                                <a href="error-page.html">
+                                    <h4>Aston Martin DB11 AMR</h4>
+                                </a>
+                                <div class="card-stars-main">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="sec-2-card-main cards-common">
+
+                            <div class="card-img-main">
+                                <img src="Images/Section-2-Card-img-02.jpg" width="95%" class="card-img" />
+                                <div class="sec-2-img-content-main">
+                                    <div class="img-content">
+                                        <h3>Sport</h3>
+                                        <h5> from <sup>$</sup> <span>180</span> <sub>/hour</sub> </h5>
+                                        <p class="img-content-para">Lorem ipsum dolor sit do amet, consectetur,
+                                            adipiscing elit, sed </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-lower-content text-center mt-4">
+                                <a href="error-page.html">
+                                    <h4>Ford F-150 Raptor</h4>
+                                </a>
+                                <div class="card-stars-main">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="sec-2-card-main cards-common">
+
+                            <div class="card-img-main">
+                                <img src="Images/Section-2-Card-img-03.jpg" width="95%" class="card-img" />
+                                <div class="sec-2-img-content-main">
+                                    <div class="img-content">
+                                        <h3>Limusine</h3>
+                                        <h5> from <sup>$</sup> <span>180</span> <sub>/hour</sub> </h5>
+                                        <p class="img-content-para">Lorem ipsum dolor sit do amet, consectetur,
+                                            adipiscing elit, sed </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-lower-content text-center mt-4">
+                                <a href="error-page.html">
+                                    <h4>BMW M-3 Coupe</h4>
+                                </a>
+                                <div class="card-stars-main">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-5">
+                        <div class="sec-2-card-main cards-common">
+
+                            <div class="card-img-main">
+                                <img src="Images/Section-2-Card-img-04.jpg" width="95%" class="card-img" />
+                                <div class="sec-2-img-content-main">
+                                    <div class="img-content">
+                                        <h3>Limusine</h3>
+                                        <h5> from <sup>$</sup> <span>180</span> <sub>/hour</sub> </h5>
+                                        <p class="img-content-para">Lorem ipsum dolor sit do amet, consectetur,
+                                            adipiscing elit, sed </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-lower-content text-center mt-4">
+                                <a href="error-page.html">
+                                    <h4>BMW X2 M35i DriveX</h4>
+                                </a>
+                                <div class="card-stars-main">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-5">
+                        <div class="sec-2-card-main cards-common">
+
+                            <div class="card-img-main">
+                                <img src="Images/Section-2-Card-img-05.jpg" width="95%" class="card-img" />
+                                <div class="sec-2-img-content-main">
+                                    <div class="img-content">
+                                        <h3>4x4</h3>
+                                        <h5> from <sup>$</sup> <span>180</span> <sub>/hour</sub> </h5>
+                                        <p class="img-content-para">Lorem ipsum dolor sit do amet, consectetur,
+                                            adipiscing elit, sed </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-lower-content text-center mt-4">
+                                <a href="error-page.html">
+                                    <h4>Mercedes G Class</h4>
+                                </a>
+                                <div class="card-stars-main">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-5">
+                        <div class="sec-2-card-main cards-common">
+
+                            <div class="card-img-main">
+                                <img src="Images/Section-2-Card-img-06.jpg" width="95%" class="card-img" />
+                                <div class="sec-2-img-content-main">
+                                    <div class="img-content">
+                                        <h3>Sport</h3>
+                                        <h5> from <sup>$</sup> <span>180</span> <sub>/hour</sub> </h5>
+                                        <p class="img-content-para">Lorem ipsum dolor sit do amet, consectetur,
+                                            adipiscing elit, sed </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-lower-content text-center mt-4">
+                                <a href="error-page.html">
+                                    <h4>Ford Raptor 135 X</h4>
+                                </a>
+                                <div class="card-stars-main">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
 
 </body>
 
