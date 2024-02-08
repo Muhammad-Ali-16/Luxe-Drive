@@ -35,6 +35,14 @@ $(document).ready(function () {
 
 
     AOS.init({
-        duration: 800
+        duration: 850,
+        once: true
     })
+});
+
+jQuery(document).ready(function ($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000,
+    });
 });
