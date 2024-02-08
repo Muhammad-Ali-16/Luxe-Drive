@@ -38,11 +38,35 @@ h1 {
     height: auto;
     width: 100%;
     position: relative;
+    padding-bottom: 70px;
 }
 
 .common-section-inner {
     height: auto;
     width: 91%;
+}
+
+.heading-small-common {
+    color: #bfa37c;
+    font-weight: 400;
+    font-size: smaller;
+    letter-spacing: 5.5px;
+}
+
+.light-para-common {
+    color: #999;
+    margin-top: 30px;
+    line-height: 1.7;
+}
+
+.common-btn {
+    outline: none;
+    background: transparent;
+    color: #eee;
+    border: 1.5px solid #bfa37c;
+    font-size: smaller;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 4px;
 }
 
 /*--=================Hero-Section=================-*/
@@ -304,11 +328,6 @@ h5 {
     padding-bottom: 35px;
 }
 
-.sec-2-main-para p {
-    color: #888;
-    font-weight: 600;
-}
-
 .sce-2-para-call .bi-headset {
     font-size: 35px;
 }
@@ -392,9 +411,8 @@ h5 {
 /*--=================Section-3-Start=================-*/
 
 .section-3-main {
-    background-color: var(--background-color-2);
+    background: var(--background-color-2);
     height: auto;
-    padding-bottom: 50px;
 }
 
 .sec-3-content-1 {
@@ -403,18 +421,170 @@ h5 {
     border-bottom: 1px solid #333;
 }
 
-.sec-3-heading-main>h6 {
-    color: #bfa37c;
-    font-weight: 400;
-    font-size: smaller;
-}
-
 .sec-3-content-2-cols {
     width: 96%;
 }
 
 .sec-3-content-2-cols>p {
     color: #999;
+}
+
+/*--=================Section-4-Start=================-*/
+
+.section-4-main {
+    background: var(--background-color-1);
+}
+
+/*--=================Section-5-Start=================-*/
+
+.section-5-main {
+    background: url(Images/Section-5-Bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*--=================Section-6-Start=================-*/
+
+.section-6-main {
+    background: var(--background-color-2);
+}
+
+.sec-6-heading {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+/*--=================Section-7-Start=================-*/
+
+.section-7-main {
+    background: var(--background-color-1);
+}
+
+.counter-main {
+    font-family: 'Inconsolata', monospace;
+}
+
+.sec-7-counter {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.counter-main h5 {
+    font-weight: 400;
+    color: #999;
+}
+
+/*--=================Section-8-Start=================-*/
+
+.section-8-main {
+    height: 80vh;
+    background: url(Images/Section-8-bg-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*--=================Section-9-Start=================-*/
+
+.section-9-main {
+    height: auto;
+    background: var(--background-color-2);
+    font-family: 'Inconsolata', monospace;
+}
+
+.sec-9-heading {
+    border-bottom: 1px solid #333;
+}
+
+.sec-9-content-common {
+    border-bottom: 1px solid #333;
+}
+
+.sec-9-img-content>h1 {
+    font-size: 55px;
+    color: #BFA37C;
+}
+
+.sec-9-img-content>h1>sub {
+    font-size: large;
+    color: #999;
+    font-weight: bold;
+}
+
+.sec-9-content-center-main>h5 {
+    font-size: large;
+    color: #999;
+}
+
+.sec-9-btn {
+    outline: none;
+    background: transparent;
+    color: #eee;
+    border: 1.5px solid #BFA37C;
+}
+
+/*--=================Section-10-Start=================-*/
+
+.section-10-main {
+    height: auto;
+    background: url(Images/Section-10-bg-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*--=================Section-11-Start=================-*/
+
+.section-11-main {
+    height: auto;
+    background: var(--background-color-2);
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.section-11-main .bi{
+    font-size: 45px;
+    color: #BFA37C;
+}
+
+.contact-items-main >a{
+    color: #999;
+    font-weight: 300;
+    font-family: 'Inconsolata', monospace;
+}
+
+/*--=================Footer-Start=================-*/
+
+.footer-main {
+    height: auto;
+    background: var(--background-color-2);
+    font-family: 'Inconsolata', monospace;
+    padding-bottom: 15px;
+}
+
+.footer-main h4{
+    color: #bfa37c;
+    letter-spacing: 3px;
+}
+
+.footer-main p{
+    color: #999;
+    line-height: 2;
+}
+
+.footer-main ul li > a{
+    color: #999;
+    font-size: medium;
+}
+
+.footer-main ul li > a:hover{
+    text-decoration: underline;
+}
+
+.footer-bottom-line{
+    border-bottom: 1px solid #333;
 }
 
 
@@ -455,6 +625,31 @@ h5 {
         width: 75%;
     }
 
+    .sec-4-content-main {
+        margin-top: 70px;
+    }
+
+    .sec-4-heading-main {
+        width: 75%;
+    }
+}
+
+@media(max-width:998px) {
+    .sec-6-contact {
+        font-size: x-small;
+    }
+
+    .sec-7-counter {
+        font-size: 58px;
+    }
+
+    .counter-main h5 {
+        font-size: medium;
+    }
+
+    .section-8-main {
+        height: 60vh;
+    }
 }
 
 @media (max-width:965px) {
@@ -505,6 +700,10 @@ h5 {
 
     .img-content sup {
         font-size: 17px;
+    }
+
+    .section-8-main {
+        height: 48vh;
     }
 
 }
