@@ -587,11 +587,7 @@ h5 {
     border-bottom: 1px solid #333;
 }
 
-
-
-
-
-
+/*--=================Media-Queries=================-*/
 
 @media(min-width:998px) {
     .header-main {
@@ -650,6 +646,14 @@ h5 {
     .section-8-main {
         height: 60vh;
     }
+
+    .section-11-main .bi{
+        font-size: 25px;
+    }
+    
+    .contact-items-main > a h5{
+        font-size: 15px;
+    }
 }
 
 @media (max-width:965px) {
@@ -660,7 +664,6 @@ h5 {
         left: 45%;
         transform: translate(-50%, 50%);
     }
-
 }
 
 @media (max-width:885px) {
@@ -671,6 +674,8 @@ h5 {
         left: 45%;
         transform: translate(-50%, 50%);
     }
+
+
 
 }
 
