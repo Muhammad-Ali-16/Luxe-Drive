@@ -1,3 +1,14 @@
+/*
+<---------------About-This-Template-------------->
+
+Theme Name: Luxe-Drive  
+Theme URL: https://muhammad-ali-16.github.io/Luxe-Drive/
+Description: The Multi-Purpose Business Template
+Author:Muhammad Ali Raza
+Version: 1.0
+
+*/
+
 $(document).ready(function () {
 
     /*----------------Header-On-Scroll-----------------*/
