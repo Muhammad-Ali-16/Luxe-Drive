@@ -599,6 +599,14 @@ h5 {
     font-family: 'Inconsolata', monospace;
 }
 
+.bi-headset, .bi-geo-alt, .bi-clock-history{
+    display: flex;
+}
+
+.contact-items-main{
+    padding: 0 0 0 8px;
+}
+
 /*--=================Footer-Start=================-*/
 
 .footer-main {
@@ -798,3 +806,4 @@ h5 {
     }
 
 }
+
